@@ -773,4 +773,301 @@
         }
         
         @keyframes twitchRotateScale {
-            0% { transform
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(-2deg) scale(1.2); }
+            50% { transform: rotate(2deg) scale(1.2); }
+            75% { transform: rotate(-2deg) scale(1.2); }
+            100% { transform: rotate(0deg) scale(1); }
+        }
+        
+        .flip-horizontally-rotate-scale {
+            animation: flipHorizontallyRotateScale 2s infinite;
+        }
+        
+        @keyframes flipHorizontallyRotateScale {
+            0% { transform: scaleX(1) rotate(0deg) scale(1); }
+            50% { transform: scaleX(-1) rotate(180deg) scale(1.2); }
+            100% { transform: scaleX(1) rotate(360deg) scale(1); }
+        }
+        
+        .flip-vertically-rotate-scale {
+            animation: flipVerticallyRotateScale 2s infinite;
+        }
+        
+        @keyframes flipVerticallyRotateScale {
+            0% { transform: scaleY(1) rotate(0deg) scale(1); }
+            50% { transform: scaleY(-1) rotate(180deg) scale(1.2); }
+            100% { transform: scaleY(1) rotate(360deg) scale(1); }
+        }
+        
+        .pulse-rotate-scale-color-shift {
+            animation: pulseRotateScaleColorShift 3s infinite;
+        }
+        
+        @keyframes pulseRotateScaleColorShift {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg) filter: hue-rotate(180deg); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg); }
+        }
+        
+        .bounce-rotate-scale-color-shift {
+            animation: bounceRotateScaleColorShift 2s infinite;
+        }
+        
+        @keyframes bounceRotateScaleColorShift {
+            0%, 100% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg) filter: hue-rotate(180deg); }
+        }
+        
+        .float-rotate-scale-color-shift {
+            animation: floatRotateScaleColorShift 4s infinite ease-in-out;
+        }
+        
+        @keyframes floatRotateScaleColorShift {
+            0% { transform: translateY(0) rotate(0deg) scale(1) filter: hue-rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg); }
+            100% { transform: translateY(0) rotate(360deg) scale(1) filter: hue-rotate(360deg); }
+        }
+        
+        .slide-rotate-scale-color-shift {
+            animation: slideRotateScaleColorShift 3s infinite;
+        }
+        
+        @keyframes slideRotateScaleColorShift {
+            0% { transform: translateX(0) rotate(0deg) scale(1) filter: hue-rotate(0deg); }
+            50% { transform: translateX(100px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg); }
+            100% { transform: translateX(0) rotate(360deg) scale(1) filter: hue-rotate(360deg); }
+        }
+        
+        .scale-rotate-color-shift-wave {
+            animation: scaleRotateColorShiftWave 4s infinite;
+        }
+        
+        @keyframes scaleRotateColorShiftWave {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0); }
+            25% { transform: scale(1.5) rotate(90deg) filter: hue-rotate(90deg) translateX(-10px); }
+            50% { transform: scale(1) rotate(180deg) filter: hue-rotate(180deg) translateX(10px); }
+            75% { transform: scale(1.5) rotate(270deg) filter: hue-rotate(270deg) translateX(-10px); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg) translateX(0); }
+        }
+        
+        .jiggle-rotate-scale-color-shift-wave {
+            animation: jiggleRotateScaleColorShiftWave 0.5s infinite;
+        }
+        
+        @keyframes jiggleRotateScaleColorShiftWave {
+            0% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+            25% { transform: rotate(-5deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            50% { transform: rotate(5deg) scale(1.2) filter: hue-rotate(180deg) translateX(10px); }
+            75% { transform: rotate(-5deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            100% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+        }
+        
+        .twitch-rotate-scale-color-shift-wave {
+            animation: twitchRotateScaleColorShiftWave 0.2s infinite;
+        }
+        
+        @keyframes twitchRotateScaleColorShiftWave {
+            0% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+            25% { transform: rotate(-2deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            50% { transform: rotate(2deg) scale(1.2) filter: hue-rotate(180deg) translateX(10px); }
+            75% { transform: rotate(-2deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            100% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+        }
+        
+        .flip-horizontally-rotate-scale-color-shift-wave {
+            animation: flipHorizontallyRotateScaleColorShiftWave 2s infinite;
+        }
+        
+        @keyframes flipHorizontallyRotateScaleColorShiftWave {
+            0% { transform: scaleX(1) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+            50% { transform: scaleX(-1) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            100% { transform: scaleX(1) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateX(0); }
+        }
+        
+        .flip-vertically-rotate-scale-color-shift-wave {
+            animation: flipVerticallyRotateScaleColorShiftWave 2s infinite;
+        }
+        
+        @keyframes flipVerticallyRotateScaleColorShiftWave {
+            0% { transform: scaleY(1) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+            50% { transform: scaleY(-1) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            100% { transform: scaleY(1) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateX(0); }
+        }
+        
+        .pulse-rotate-scale-color-shift-wave-bounce {
+            animation: pulseRotateScaleColorShiftWaveBounce 3s infinite;
+        }
+        
+        @keyframes pulseRotateScaleColorShiftWaveBounce {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: scale(1.5) rotate(90deg) filter: hue-rotate(90deg) translateX(-10px) translateY(-30px); }
+            50% { transform: scale(1) rotate(180deg) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: scale(1.5) rotate(270deg) filter: hue-rotate(270deg) translateX(-10px) translateY(-30px); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg) translateX(0) translateY(0); }
+        }
+        
+        .bounce-rotate-scale-color-shift-wave-pulse {
+            animation: bounceRotateScaleColorShiftWavePulse 2s infinite;
+        }
+        
+        @keyframes bounceRotateScaleColorShiftWavePulse {
+            0%, 100% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            50% { transform: scale(1.2) rotate(180deg) filter: hue-rotate(180deg) translateX(10px) translateY(-30px); }
+        }
+        
+        .float-rotate-scale-color-shift-wave-bounce {
+            animation: floatRotateScaleColorShiftWaveBounce 4s infinite ease-in-out;
+        }
+        
+        @keyframes floatRotateScaleColorShiftWaveBounce {
+            0% { transform: translateY(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+            25% { transform: translateY(-30px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            50% { transform: translateY(0) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateX(0); }
+            75% { transform: translateY(-30px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            100% { transform: translateY(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+        }
+        
+        .slide-rotate-scale-color-shift-wave-bounce {
+            animation: slideRotateScaleColorShiftWaveBounce 3s infinite;
+        }
+        
+        @keyframes slideRotateScaleColorShiftWaveBounce {
+            0% { transform: translateX(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateY(0); }
+            25% { transform: translateX(100px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateY(-30px); }
+            50% { transform: translateX(0) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateY(0); }
+            75% { transform: translateX(100px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateY(-30px); }
+            100% { transform: translateX(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateY(0); }
+        }
+        
+        .scale-rotate-color-shift-wave-bounce-pulse {
+            animation: scaleRotateColorShiftWaveBouncePulse 4s infinite;
+        }
+        
+        @keyframes scaleRotateColorShiftWaveBouncePulse {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: scale(1.5) rotate(90deg) filter: hue-rotate(90deg) translateX(-10px) translateY(-30px); }
+            50% { transform: scale(1) rotate(180deg) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: scale(1.5) rotate(270deg) filter: hue-rotate(270deg) translateX(-10px) translateY(-30px); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg) translateX(0) translateY(0); }
+        }
+        
+        .jiggle-rotate-scale-color-shift-wave-bounce-pulse {
+            animation: jiggleRotateScaleColorShiftWaveBouncePulse 0.5s infinite;
+        }
+        
+        @keyframes jiggleRotateScaleColorShiftWaveBouncePulse {
+            0% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: rotate(-5deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            50% { transform: rotate(5deg) scale(1.2) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: rotate(-5deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            100% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+        }
+        
+        .twitch-rotate-scale-color-shift-wave-bounce-pulse {
+            animation: twitchRotateScaleColorShiftWaveBouncePulse 0.2s infinite;
+        }
+        
+        @keyframes twitchRotateScaleColorShiftWaveBouncePulse {
+            0% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: rotate(-2deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            50% { transform: rotate(2deg) scale(1.2) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: rotate(-2deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            100% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+        }
+        
+        .flip-horizontally-rotate-scale-color-shift-wave-bounce-pulse {
+            animation: flipHorizontallyRotateScaleColorShiftWaveBouncePulse 2s infinite;
+        }
+        
+        @keyframes flipHorizontallyRotateScaleColorShiftWaveBouncePulse {
+            0% { transform: scaleX(1) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            50% { transform: scaleX(-1) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            100% { transform: scaleX(1) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateX(0) translateY(0); }
+        }
+        
+        .flip-vertically-rotate-scale-color-shift-wave-bounce-pulse {
+            animation: flipVerticallyRotateScaleColorShiftWaveBouncePulse 2s infinite;
+        }
+        
+        @keyframes flipVerticallyRotateScaleColorShiftWaveBouncePulse {
+            0% { transform: scaleY(1) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            50% { transform: scaleY(-1) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            100% { transform: scaleY(1) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateX(0) translateY(0); }
+        }
+        
+        .pulse-rotate-scale-color-shift-wave-bounce-pulse-float {
+            animation: pulseRotateScaleColorShiftWaveBouncePulseFloat 3s infinite;
+        }
+        
+        @keyframes pulseRotateScaleColorShiftWaveBouncePulseFloat {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: scale(1.5) rotate(90deg) filter: hue-rotate(90deg) translateX(-10px) translateY(-30px); }
+            50% { transform: scale(1) rotate(180deg) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: scale(1.5) rotate(270deg) filter: hue-rotate(270deg) translateX(-10px) translateY(-30px); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg) translateX(0) translateY(0); }
+        }
+        
+        .bounce-rotate-scale-color-shift-wave-bounce-pulse-float {
+            animation: bounceRotateScaleColorShiftWaveBouncePulseFloat 2s infinite;
+        }
+        
+        @keyframes bounceRotateScaleColorShiftWaveBouncePulseFloat {
+            0%, 100% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            50% { transform: scale(1.2) rotate(180deg) filter: hue-rotate(180deg) translateX(10px) translateY(-30px); }
+        }
+        
+        .float-rotate-scale-color-shift-wave-bounce-pulse-float {
+            animation: floatRotateScaleColorShiftWaveBouncePulseFloat 4s infinite ease-in-out;
+        }
+        
+        @keyframes floatRotateScaleColorShiftWaveBouncePulseFloat {
+            0% { transform: translateY(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+            25% { transform: translateY(-30px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            50% { transform: translateY(0) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateX(0); }
+            75% { transform: translateY(-30px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px); }
+            100% { transform: translateY(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0); }
+        }
+        
+        .slide-rotate-scale-color-shift-wave-bounce-pulse-float {
+            animation: slideRotateScaleColorShiftWaveBouncePulseFloat 3s infinite;
+        }
+        
+        @keyframes slideRotateScaleColorShiftWaveBouncePulseFloat {
+            0% { transform: translateX(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateY(0); }
+            25% { transform: translateX(100px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateY(-30px); }
+            50% { transform: translateX(0) rotate(360deg) scale(1) filter: hue-rotate(360deg) translateY(0); }
+            75% { transform: translateX(100px) rotate(180deg) scale(1.2) filter: hue-rotate(180deg) translateY(-30px); }
+            100% { transform: translateX(0) rotate(0deg) scale(1) filter: hue-rotate(0deg) translateY(0); }
+        }
+        
+        .scale-rotate-color-shift-wave-bounce-pulse-float {
+            animation: scaleRotateColorShiftWaveBouncePulseFloat 4s infinite;
+        }
+        
+        @keyframes scaleRotateColorShiftWaveBouncePulseFloat {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: scale(1.5) rotate(90deg) filter: hue-rotate(90deg) translateX(-10px) translateY(-30px); }
+            50% { transform: scale(1) rotate(180deg) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: scale(1.5) rotate(270deg) filter: hue-rotate(270deg) translateX(-10px) translateY(-30px); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg) translateX(0) translateY(0); }
+        }
+        
+        .jiggle-rotate-scale-color-shift-wave-bounce-pulse-float {
+            animation: jiggleRotateScaleColorShiftWaveBouncePulseFloat 0.5s infinite;
+        }
+        
+        @keyframes jiggleRotateScaleColorShiftWaveBouncePulseFloat {
+            0% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+            25% { transform: rotate(-5deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            50% { transform: rotate(5deg) scale(1.2) filter: hue-rotate(180deg) translateX(10px) translateY(0); }
+            75% { transform: rotate(-5deg) scale(1.2) filter: hue-rotate(180deg) translateX(-10px) translateY(-30px); }
+            100% { transform: rotate(0deg) scale(1) filter: hue-rotate(0deg) translateX(0) translateY(0); }
+        }
+        
+        .twitch-rotate-scale-color-shift-wave-bounce-pulse-float {
+            animation: twitchRotateScaleColorShiftWaveBouncePulseFloat 0.2s infinite;
+        }
+        
+        @keyframes twitchRotateScaleColorShiftWaveBouncePulseFloat {
+            0% { transform: rotate(0deg) scale(1)
