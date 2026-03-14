@@ -677,4 +677,100 @@
             animation: flipHorizontallyRotate 2s infinite;
         }
         
-        @keyframes flipHor
+        @keyframes flipHorizontallyRotate {
+            0% { transform: scaleX(1) rotate(0deg); }
+            50% { transform: scaleX(-1) rotate(180deg); }
+            100% { transform: scaleX(1) rotate(360deg); }
+        }
+        
+        .flip-vertically-rotate {
+            animation: flipVerticallyRotate 2s infinite;
+        }
+        
+        @keyframes flipVerticallyRotate {
+            0% { transform: scaleY(1) rotate(0deg); }
+            50% { transform: scaleY(-1) rotate(180deg); }
+            100% { transform: scaleY(1) rotate(360deg); }
+        }
+        
+        .pulse-rotate-scale {
+            animation: pulseRotateScale 3s infinite;
+        }
+        
+        @keyframes pulseRotateScale {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg); }
+            100% { transform: scale(1) rotate(360deg); }
+        }
+        
+        .bounce-rotate-scale {
+            animation: bounceRotateScale 2s infinite;
+        }
+        
+        @keyframes bounceRotateScale {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(180deg); }
+        }
+        
+        .float-rotate-scale {
+            animation: floatRotateScale 4s infinite ease-in-out;
+        }
+        
+        @keyframes floatRotateScale {
+            0% { transform: translateY(0) rotate(0deg) scale(1); }
+            50% { transform: translateY(-30px) rotate(180deg) scale(1.2); }
+            100% { transform: translateY(0) rotate(360deg) scale(1); }
+        }
+        
+        .slide-rotate-scale {
+            animation: slideRotateScale 3s infinite;
+        }
+        
+        @keyframes slideRotateScale {
+            0% { transform: translateX(0) rotate(0deg) scale(1); }
+            50% { transform: translateX(100px) rotate(180deg) scale(1.2); }
+            100% { transform: translateX(0) rotate(360deg) scale(1); }
+        }
+        
+        .scale-rotate-color-shift {
+            animation: scaleRotateColorShift 4s infinite;
+        }
+        
+        @keyframes scaleRotateColorShift {
+            0% { transform: scale(1) rotate(0deg) filter: hue-rotate(0deg); }
+            25% { transform: scale(1.5) rotate(90deg) filter: hue-rotate(90deg); }
+            50% { transform: scale(1) rotate(180deg) filter: hue-rotate(180deg); }
+            75% { transform: scale(1.5) rotate(270deg) filter: hue-rotate(270deg); }
+            100% { transform: scale(1) rotate(360deg) filter: hue-rotate(360deg); }
+        }
+        
+        .wave-rotate-scale {
+            animation: waveRotateScale 2s infinite;
+        }
+        
+        @keyframes waveRotateScale {
+            0% { transform: translateX(0) rotate(0deg) scale(1); }
+            25% { transform: translateX(-10px) rotate(-45deg) scale(1.2); }
+            50% { transform: translateX(10px) rotate(45deg) scale(1.2); }
+            75% { transform: translateX(-10px) rotate(-45deg) scale(1.2); }
+            100% { transform: translateX(0) rotate(0deg) scale(1); }
+        }
+        
+        .jiggle-rotate-scale {
+            animation: jiggleRotateScale 0.5s infinite;
+        }
+        
+        @keyframes jiggleRotateScale {
+            0% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(-5deg) scale(1.2); }
+            50% { transform: rotate(5deg) scale(1.2); }
+            75% { transform: rotate(-5deg) scale(1.2); }
+            100% { transform: rotate(0deg) scale(1); }
+        }
+        
+        .twitch-rotate-scale {
+            animation: twitchRotateScale 0.2s infinite;
+        }
+        
+        @keyframes twitchRotateScale {
+            0% { transform
